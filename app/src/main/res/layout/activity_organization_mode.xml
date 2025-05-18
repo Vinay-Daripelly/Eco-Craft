@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="16dp"
+
+            android:paddingEnd="16dp">
+
+            <!-- Left Group: Icon + Text -->
+            <LinearLayout
+                android:id="@+id/ecoTitleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_leaf"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ecocraft_plastic"
+                    android:textColor="#2F855A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Right Button -->
+            <ImageView
+                android:id="@+id/recycle_notifications"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:contentDescription="Notifications"
+                android:focusable="true"
+                android:src="@drawable/requests"
+                android:tint="#2F855A"
+                tools:ignore="UseAppTint,TouchTargetSizeCheck" />
+        </RelativeLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organization Dashboard - Today"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1A202C"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Total Items Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:text="Total Items: "
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#4A5568"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalItems"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2D3748" />
+        </LinearLayout>
+
+        <!-- Most Common Type Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:text="Most Common: "
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#4A5568"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mostCommon"
+                android:text="N/A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2D3748"  android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Pie Chart -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/white"
+            android:elevation="4dp" />
+
+        <!-- Bar Chart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add New Plastic Item -->
+        <TextView
+            android:id="@+id/addNewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Plastic Item"
+            android:textSize="16sp"
+            android:textColor="#2B6CB0"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <!-- Detected Plastic Type -->
+        <TextView
+            android:id="@+id/detectedPlasticType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#2D3748"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_leaf"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ecocraft_plastic"
+                android:textColor="#2F855A"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+

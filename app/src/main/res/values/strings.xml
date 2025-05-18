@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Eco Craft</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_plastic_detection">PlasticDetectionActivity</string>
+    <string name="title_activity_individual_mode">IndividualModeActivity</string>
+    <string name="title_activity_organization_mode">OrganizationModeActivity</string>
+    <string name="title_activity_organization_mode_activity.kt">OrganizationModeActivity.kt</string>
+    <string name="get_started_now">Get Started Now</string>
+    <string name="create_a_beautiful_hanging_planter_from_a_plastic_bottle">Create a beautiful hanging planter from a plastic bottle</string>
+    <string name="pet_plastic_87_match">PET Plastic | 87% match</string>
+    <string name="hanging_plant_holder">Hanging Plant Holder</string>
+    <string name="todo">TODO</string>
+    <string name="choose_this_mode">Choose this mode</string>
+    <string name="upload_an_image_of_your_plastic_item">Upload an Image of Your Plastic Item</string>
+    <string name="ecocraft_plastic">Eco Craft</string>
+    <string name="title_activity_suggestion_activity.kt">SuggestionActivity.kt</string>
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+    <string name="get_upcycling_ideas">Get Upcycling Ideas!</string>
+    <string name="title_activity_recycle_requests">RecycleRequestsActivity</string>
+    <string name="logout">Logout</string>
+</resources>

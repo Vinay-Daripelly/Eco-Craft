@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963889888008",
+    "project_id": "eco-craft-plastic",
+    "storage_bucket": "eco-craft-plastic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963889888008:android:12eb8b32c95ae990428abd",
+        "android_client_info": {
+          "package_name": "com.example.ecocraftplastic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZHXrRcWbOXQ54i9_knNlBvUeiu36kzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
